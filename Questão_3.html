@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista 1 - Questão 3</title>
+</head>
+
+<body>
+  <h1>Server Side vs Client Side</h1>
+  <div class="layout">
+    <div class="server">
+      <h2>Server Side</h2>
+      <ol>
+        <li>Execução no Servidor:</li>
+        <ul>
+          <li>O código é executado no servidor, antes de ser enviado para o navegador do usuário.</li>
+          <li>Linguagens como PHP, Python (com frameworks como Django e Flask), Ruby (com Ruby on Rails), Java (com Spring), e Node.js (JavaScript no servidor) são comuns para desenvolvimento server-side.</li>
+        </ul>
+        <li>Funções:</li>
+        <ul>
+          <li>Manipula dados, realiza operações de backend, e interage com bancos de dados.</li>
+          <li>Gera conteúdo dinâmico e gerencia a lógica de negócios.</li>
+          <li>Cuida da autenticação, autorização e qualquer lógica que não deve ser exposta ao cliente.</li>
+        </ul>
+        <li>Segurança:</li>
+        <ul>
+          <li>Código e lógica são mantidos no servidor, o que pode ajudar a proteger a lógica sensível e dados críticos</li>
+        </ul>
+        <li>Exemplo:</li>
+        <ul>
+          <li>Um servidor PHP processa um formulário de login, verifica as credenciais e retorna uma resposta ao cliente com base no resultado.</li>
+        </ul>
+      </ol>
+    </div>
+    <div class="client">
+      <h2>Client Side</h2>
+      <ol>
+        <li>Execução no Navegador:</li>
+        <ul>
+          <li>O código é executado diretamente no navegador do usuário.</li>
+          <li>Linguagens como JavaScript (a principal para client-side), HTML (para estruturação de conteúdo), e CSS (para estilização) são usadas para a criação de interfaces de usuário interativas e dinâmicas.</li>
+        </ul>
+        <li>Funções:</li>
+        <ul>
+          <li>Manipula a interface do usuário, controla interações e atualiza a página sem precisar recarregá-la completamente.</li>
+          <li>Melhora a experiência do usuário, tornando a interação com a aplicação mais responsiva e dinâmica.</li>
+        </ul>
+        <li>Segurança:</li>
+        <ul>
+          <li>O código é visível para o usuário e pode ser inspecionado ou modificado, então a lógica sensível deve ser tratada no servidor.</li>
+        </ul>
+        <li>Exemplo:</li>
+        <ul>
+          <li>Um script JavaScript no navegador pode validar a entrada de um formulário antes de enviá-lo para o servidor, exibindo mensagens de erro instantaneamente se os dados estiverem incorretos.</li>
+        </ul>
+      </ol>
+    </div>
+  </div>
+</body>
+
+<style>
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  ol {
+    text-align: justify;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .server {
+    background-color: rgb(227, 173, 249);
+    padding: 20px;
+    padding-right: 40px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+  }
+
+  .client {
+    background-color: rgb(227, 173, 249);
+    padding: 20px;
+    padding-right: 40px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+  }
+
+  .server:hover {
+    border: 1px solid black;
+  }
+
+  .client:hover {
+    border: 1px solid black;
+  }
+</style>
+
+</html>
